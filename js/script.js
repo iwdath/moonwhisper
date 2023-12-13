@@ -1,6 +1,6 @@
 // define an array of posts
 const posts = [
-  { number: 0, date: "1970-01-01T04:15", message: "<p>test message</p>" }
+  { date: "1970-01-01T04:15", message: "<p>test message</p>" }
 ];
 
 // define the number of posts displayed
@@ -16,7 +16,7 @@ function addPosts(count) {
     const post = posts[i];
 
     // create the post structure
-    const article = createPostStructure(post);
+    const article = createPostStructure(post, posts.length - 1 - i);
     container.appendChild(article);
   };
 
@@ -27,7 +27,7 @@ function addPosts(count) {
   };
 };
 
-function createPostStructure(post) {
+function createPostStructure(post, number) {
   const article = document.createElement('article');
   article.className = 'post';
 
@@ -35,7 +35,7 @@ function createPostStructure(post) {
   postInfo.className = 'post__info';
 
   const postDate = createPostDateElement(post.date);
-  const postNumber = createPostNumberElement(post.number);
+  const postNumber = createPostNumberElement(number);
 
   const postMessage = createPostMessageElement(post.message);
 
