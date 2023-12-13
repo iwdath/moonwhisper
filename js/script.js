@@ -1,6 +1,6 @@
 // define an array of posts
 const posts = [
-  { number: 0, date: "1970-01-01T04:15", message: "test message 0" }
+  { number: 0, date: "1970-01-01T04:15", message: "test message" }
 ];
 
 // define the number of posts displayed
@@ -52,7 +52,7 @@ function createPostDateElement(date) {
   postDate.className = 'post__date';
 
   postDate.setAttribute('datetime', date);
-  postDate.textContent = formatDate(date);
+  postDate.textContent = getFormattedDate(date);
 
   return postDate;
 };
@@ -78,14 +78,15 @@ function createPostMessageElement(message) {
 };
 
 // format the date
-function formatDate(dateString) {
+function getFormattedDate(dateString) {
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const days = ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th', '10th', '11th', '12th', '13th', '14th', '15th', '16th', '17th', '18th', '19th', '20th', '21st', '22nd', '23rd', '24th', '25th', '26th', '27th', '28th', '29th', '30th', '31st'];
 
   const [date, time] = dateString.split('T');
   const [year, month, day] = date.split('-');
   const [hour, minute] = time.split(':');
 
-  const formattedDate = `${months[parseInt(month) - 1]} ${parseInt(day)}, ${year} ${hour}:${minute} ${hour < 12 ? 'AM' : 'PM'}`;
+  const formattedDate = `${months[parseInt(month) - 1]} ${days[parseInt(day) - 1]}, ${year} ${hour}:${minute} ${hour < 12 ? 'AM' : 'PM'}`;
 
   return formattedDate;
 };
