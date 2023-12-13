@@ -1,6 +1,6 @@
 // define an array of posts
 const posts = [
-  { number: 0, date: "1970-01-01T04:15", message: "test message" }
+  { number: 0, date: "1970-01-01T04:15", message: "<p>test message</p>" }
 ];
 
 // define the number of posts displayed
@@ -70,9 +70,7 @@ function createPostMessageElement(message) {
   const postMessage = document.createElement('div');
   postMessage.className = 'post__message';
 
-  const p = document.createElement('p');
-  p.textContent = message;
-  postMessage.appendChild(p);
+  postMessage.innerHTML = message;
 
   return postMessage;
 };
