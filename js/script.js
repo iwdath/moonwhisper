@@ -1,7 +1,7 @@
 // define an array of posts
 const posts = [
-  { date: "2023-12-14T19:22", message: "<p>It seems that I have implemented the main features for this site that I wanted. There are small corrections and changes needed in the code:</p><ol><li>Style the scrollbar</li><li>Style the paragraphs that are nearby</li><li>Remove the bottom margin for the last ul and ol tags</li><li>Change the time format to 12-hour</li></ol><p>That’s all I can remember right now. While solving these tasks, I might remember and do more.</p><p>Also, I will soon have Ubuntu OS. After its installation, I will start writing a program for encrypting and decrypting text. In the near future, my posts will be encrypted.</p>" },
-  { date: "1970-01-01T04:15", message: "<p>test message</p>" }
+  { date: '2023-12-14T19:22', message: '<p>It seems that I have implemented the main features for this site that I wanted. There are small corrections and changes needed in the code:</p><ol><li>Style the scrollbar</li><li>Style the paragraphs that are nearby</li><li>Remove the bottom margin for the last ul and ol tags</li><li>Change the time format to 12-hour</li></ol><p>That&#39;s all I can remember right now. While solving these tasks, I might remember and do more.</p><p>Also, I will soon have Ubuntu OS. After its installation, I will start writing a program for encrypting and decrypting text. In the near future, my posts will be encrypted.</p>' },
+  { date: '1970-01-01T04:15', message: '<p>test message</p>' }
 ];
 
 // define the number of posts displayed

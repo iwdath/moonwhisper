@@ -175,7 +175,7 @@ html {
   margin: 0;
 }
 
-.post__message p + p {
+.post__message p+p {
   margin-top: 16px;
 }
 
