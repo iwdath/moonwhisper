@@ -185,6 +185,11 @@ html {
   padding-left: 40px;
 }
 
+.post__message ul:last-child,
+.post__message ol:last-child {
+  margin-bottom: 0;
+}
+
 /* footer */
 
 .footer {
