@@ -60,12 +60,6 @@ html {
   background-color: #0c0c0e;
 }
 
-ul,
-ol {
-  margin: 16px 0;
-  padding-left: 40px;
-}
-
 .load-btn {
   margin: 0 auto 45px;
   border: none;
@@ -179,6 +173,16 @@ ol {
 .post__number,
 .post__message p {
   margin: 0;
+}
+
+.post__message p + p {
+  margin-top: 16px;
+}
+
+.post__message ul,
+.post__message ol {
+  margin: 16px 0;
+  padding-left: 40px;
 }
 
 /* footer */
