@@ -83,9 +83,13 @@ function getFormattedDate(dateString) {
 
   const [date, time] = dateString.split('T');
   const [year, month, day] = date.split('-');
-  const [hour, minute] = time.split(':');
+  let [hour, minute] = time.split(':');
 
-  const formattedDate = `${months[parseInt(month) - 1]} ${days[parseInt(day) - 1]}, ${year} ${hour}:${minute} ${hour < 12 ? 'AM' : 'PM'}`;
+  // convert hour to 12-hour format
+  const period = hour < 12 ? 'AM' : 'PM';
+  hour = (hour % 12) || 12; // 0 should be treated as 12 in 12-hour format
+
+  const formattedDate = `${months[parseInt(month) - 1]} ${days[parseInt(day) - 1]}, ${year} ${hour}:${minute} ${period}`;
 
   return formattedDate;
 };
