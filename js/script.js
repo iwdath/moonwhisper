@@ -1,5 +1,6 @@
 // define an array of posts
 const posts = [
+  { date: '2023-12-15T16:28', message: '<p>Yesterday I did everything I planned except for styling the scrollbar. There are problems with it because it&#39;s hard to make a scrollbar that is supported by all browsers. For this, you can use libraries, but yesterday I couldn&#39;t figure out how to do it. I liked the OverlayScrollbars library and a little later I will try again to understand the documentation.</p>' },
   { date: '2023-12-14T19:22', message: '<p>It seems that I have implemented the main features for this site that I wanted. There are small corrections and changes needed in the code:</p><ol><li>Style the scrollbar</li><li>Style the paragraphs that are nearby</li><li>Remove the bottom margin for the last ul and ol tags</li><li>Change the time format to 12-hour</li></ol><p>That&#39;s all I can remember right now. While solving these tasks, I might remember and do more.</p><p>Also, I will soon have Ubuntu OS. After its installation, I will start writing a program for encrypting and decrypting text. In the near future, my posts will be encrypted.</p>' },
   { date: '1970-01-01T04:15', message: '<p>test message</p>' }
 ];
