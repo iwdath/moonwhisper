@@ -106,14 +106,13 @@ html {
   -webkit-justify-content: center;
   justify-content: center;
   margin: 0 auto;
-  -moz-border-radius-bottomright: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  -moz-border-radius-bottomleft: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  margin-top: 15px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
   width: 100%;
   height: 60px;
+  max-width: 280px;
   background-color: #17181a;
 }
 
@@ -209,14 +208,13 @@ html {
   -webkit-justify-content: center;
   justify-content: center;
   margin: 0 auto;
-  -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-radius: 8px;
-  border-top-left-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  -webkit-border-top-right-radius: 8px;
-  border-top-right-radius: 8px;
+  margin-bottom: 15px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
   width: 100%;
   height: 60px;
+  max-width: 280px;
   background-color: #17181a;
 }
 
