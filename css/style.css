@@ -87,6 +87,16 @@ html {
   transform: scale(1.05);
 }
 
+.load-btn:active {
+  background-color: #656668;
+}
+
+.os-theme-light {
+  --os-handle-bg: #454648;
+  --os-handle-bg-hover: #555658;
+  --os-handle-bg-active: #656668;
+}
+
 /* header */
 
 .header {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html lang="en" class="page" data-overlayscrollbars-initialize>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,10 +24,11 @@
   <title>Moonwhisper</title>
   <link rel="preload" as="font" href="fonts/JetBrainsMonoExtraBold.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="fonts/JetBrainsMonoRegular.woff2" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/overlayscrollbars.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page__body">
+<body class="page__body" data-overlayscrollbars-initialize>
   <header class="header">
     <a class="header__title">Moonwhisper</a>
   </header>
@@ -36,6 +37,21 @@
   <footer class="footer">
     <p class="footer__title">© iwdath</p>
   </footer>
+  <script src="js/overlayscrollbars.browser.es5.min.js"></script>
+  <script>
+    var {
+      OverlayScrollbars,
+      ScrollbarsHidingPlugin,
+      SizeObserverPlugin,
+      ClickScrollPlugin
+    } = OverlayScrollbarsGlobal;
+
+    const osInstance = OverlayScrollbars(document.querySelector('.page__body'), {
+      scrollbars: {
+        theme: 'os-theme-light',
+      },
+    });
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>
