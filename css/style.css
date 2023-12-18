@@ -116,7 +116,7 @@ html {
   -webkit-justify-content: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 30px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -218,7 +218,7 @@ html {
   -webkit-justify-content: center;
   justify-content: center;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
