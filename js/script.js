@@ -1,5 +1,6 @@
 // define an array of posts
 const posts = [
+  { date: '2023-12-19T23:17', message: 'в ближайшее время у меня будет новый пк и я смогу эффективно изучать программирование/веб. надеюсь будет работать нормально, ведь он на зеоне. но вроде серверные детали довольно надёжные.' },
   { date: '2023-12-17T22:25', message: 'бэм - интересная штука. пока остаются вопросы, но возможно, на практике пойму лучше.' },
   { date: '2023-12-17T17:16', message: '<p>вчера сделал скролл бар, всё оказалось просто. только теперь он виден и на телефонах. нужно потом исправить это.</p><p>убунту будет не скоро, по этому начинать писать программу для шифрования ещё не буду.</p><p>сейчас хочу начать писать портфолио, но для начала научусь правильно использовать бэм и scss.</p>' },
   { date: '2023-12-15T16:28', message: '<p>Yesterday I did everything I planned except for styling the scrollbar. There are problems with it because it&#39;s hard to make a scrollbar that is supported by all browsers. For this, you can use libraries, but yesterday I couldn&#39;t figure out how to do it. I liked the OverlayScrollbars library and a little later I will try again to understand the documentation.</p>' },
