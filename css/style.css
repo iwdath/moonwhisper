@@ -179,9 +179,13 @@ html {
   color: #b3b3b3;
 }
 
-.post__number,
+.post__number {
+  margin: 0;
+}
+
 .post__message p {
   margin: 0;
+  word-break: break-all;
 }
 
 .post__message p+p {
@@ -192,6 +196,7 @@ html {
 .post__message ol {
   margin: 16px 0;
   padding-left: 40px;
+  word-break: break-all;
 }
 
 .post__message ul:last-child,
