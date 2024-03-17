@@ -1,6 +1,27 @@
 // define an array of posts
 const posts = [
   {
+    date: '2024-03-17T20:03', message: '\
+    <p>обновлённый список комплектующих пк:</p>\
+    <ul>\
+      <li>Процессор Intel Xeon E5-2650 v2 (2.6GHz-TB3.3GHz)</li>\
+      <li>Видеокарта Radeon RX 570 (4GB)</li>\
+      <li>ОЗУ x2 16GB DDR3-1600 SDRAM</li>\
+      <li>Материнка C600/X79 chipset</li>\
+      <li>БП Qube 600W (QBF-HPG-600W-12S)</li>\
+      <li>Кулер ID-COOLING SE-903-SD</li>\
+      <li>Корпус Prologix E107</li>\
+      <li>Монитор HP Compaq LA2405x</li>\
+    </ul>\
+    <p>девайсы:</p>\
+    <ul>\
+      <li>Клавиатура Razer BlackWidow V3 TKL</li>\
+      <li>Мышь Greenwave GM-4861L</li>\
+      <li>Наушники Baseus Encok WM01 Plus</li>\
+      <li>Коврик для мыши Havit MP845</li>\
+    </ul>'
+  },
+  {
     date: '2024-03-17T19:47', message: '\
     <p>пока форматировал js файл, читал все старые посты и вспомнил как себя ощущал тогда, о чём думал.</p>\
     <p>полезно иногда почитать старые мысли. хорошо что сделал этот сайт.</p>'
